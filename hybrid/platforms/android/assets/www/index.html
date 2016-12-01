@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body ng-app="app">
+    	
+        <!--html要在js之前渲染-->
+        <app-layout></app-layout>
+
+        <!--依赖外部js-->
+        <script type="text/javascript" src="js/myjs/libraries/angular.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/angular-animate.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/angular-resource.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/angular-sanitize.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/angular-ui-router.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/ionic.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/ionic.bundle.js"></script>
+        <script type="text/javascript" src="js/myjs/libraries/ionic-angular.js"></script>
+        
+        <!--自定义js-->
+        <!--angularjs部分-->
+        <script type="text/javascript" src="js/myjs/config/app.js"></script>
+        <script type="text/javascript" src="js/myjs/directive/layout.js"></script>
+        <script type="text/javascript" src="js/myjs/controller/layout.js"></script>
+        <!--插件部分-->
+        <script type="text/javascript" src="plugins/customdialog/dialog.js"></script>
+
+        <!--cordova自带js-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
